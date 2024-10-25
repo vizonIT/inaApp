@@ -308,25 +308,65 @@ a img {
     gap: 2.5em;
   }
 
-  /* #rank1 h4 {
-    display: inline;
-  } */
-
   #rank1 {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    gap: 8em;
+  }
+  #rank1 div {
+    align-items: flex-start;
+    padding-left: 20px;
   }
 
   .rank {
-    width: 30em;
-    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 650px;
+
+    border: none;
+  }
+  .nextOrder {
+    gap: 6em;
+    margin: 0 0.5em;
+  }
+  .hours {
+    margin-left: 10px;
+    align-self: center;
+  }
+  .menuIcons {
+    margin: 0;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 10em;
+    height: 100vh;
+  }
+
+  .LRscroll {
+    display: none;
+    margin: 0;
+  }
+  .hideLogo {
+    display: inline;
+  }
+  nav {
+    margin: 0;
+    padding: 0;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    background-color: ;
-    border: 1px solid #3534311a;
-    border-radius: 5px;
-    margin: 0.5em 0; */
+    justify-content: space-between;
+    gap: 2em;
+  }
+  nav ul li a {
+    padding: 1em 0.5em;
   }
 }
