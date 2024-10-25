@@ -240,12 +240,10 @@ nav ul {
   justify-content: space-evenly;
   align-items: center;
   width: inherit;
-  /* margin: 0; */
   margin-top: 15px;
+  list-style-type: none;
 }
 nav ul li {
-  list-style-type: none;
-  flex-grow: 1px;
 }
 a {
   margin: 0;
@@ -269,13 +267,9 @@ a img {
   .wrapContainer {
     min-width: 600px;
   }
+
   main {
     width: inherit;
-    /* margin: 30px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
 
     overflow: visible;
   }
@@ -304,6 +298,21 @@ a img {
     min-width: 800px;
   }
 
+  header {
+    display: none;
+  }
+
+  .hero {
+    margin: 2em 3em;
+
+    h1 {
+      width: 25em;
+    }
+    p {
+      width: 30em;
+    }
+  }
+
   .pLocations {
     gap: 2.5em;
   }
@@ -313,27 +322,36 @@ a img {
     justify-content: flex-start;
     align-items: center;
     gap: 8em;
-  }
-  #rank1 div {
-    align-items: flex-start;
-    padding-left: 20px;
+
+    div {
+      align-items: flex-start;
+      padding-left: 20px;
+      margin-left: 1.8em;
+    }
   }
 
   .rank {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     min-width: 650px;
-
+    gap: 1rem;
     border: none;
   }
   .nextOrder {
-    gap: 6em;
-    margin: 0 0.5em;
+    gap: 7em;
+
+    p {
+      /* font-weight: 600; */
+      text-align: center;
+    }
   }
   .hours {
-    margin-left: 6em;
-    align-self: center;
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    /* color: #353431; */
   }
   .menuIcons {
     margin: 0;
@@ -344,8 +362,9 @@ a img {
     position: fixed;
     top: 0;
     left: 0;
-    min-width: 10em;
+    min-width: 8em;
     height: 100vh;
+    background-color: beige;
   }
 
   .LRscroll {
@@ -364,9 +383,81 @@ a img {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 2em;
+    gap: 1.5em;
   }
   nav ul li a {
     padding: 1em 0.5em;
+  }
+
+  a img {
+    width: 3rem;
+    height: 2.2rem;
+    &:hover {
+      background-color: rgb(255, 215, 105);
+      padding: 0.4em;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .pLocations {
+    display: grid;
+    gap: 2.2em;
+    grid-template-columns: auto auto auto;
+  }
+
+  .hero {
+    margin: 2em;
+
+    h1 {
+      font-size: 1.9rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+  main h2 {
+    font-size: 1.8rem;
+    margin: 0.3em;
+  }
+  #rank1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+
+    div {
+      align-items: flex-start;
+      padding-left: 2.2em;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }
+  .rank {
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+  }
+  .ranking {
+    margin: 3.5em 0;
+    h3 {
+      font-size: 1.7rem;
+    }
+  }
+  .tabularRanking {
+    min-width: 60em;
+  }
+
+  .nextOrder p,
+  .hours {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  a img {
+    width: 3rem;
+    height: 1.8rem;
+    margin: 0.5em;
   }
 }
