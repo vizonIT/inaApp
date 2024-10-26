@@ -3,6 +3,14 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: myfonts;
+  src: url(./fonts/Satoshi-Bold.woff);
+  src: url(./fonts/Satoshi-Bold.woff2);
+  src: url(./fonts/Satoshi-Medium.woff);
+  src: url(./fonts/Satoshi-Medium.woff2);
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -14,7 +22,6 @@ body {
 .wrapContainer {
   /* margin: 0.8em; */
   width: 400px;
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,6 +81,7 @@ header {
   color: #353431;
   font-size: 2rem;
   font-weight: 700;
+  font-family: myfonts;
 }
 .hero p {
   color: #353431b2;
@@ -81,6 +89,7 @@ header {
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
+  font-family: myfonts;
 }
 .cta1 {
   width: 153px;
@@ -92,6 +101,7 @@ header {
   font-weight: 700;
   background-color: #db8e21;
   color: #ffffff;
+  font-family: myfonts;
 }
 
 /* Styling for main section */
@@ -111,6 +121,7 @@ main h2 {
   font-weight: 700;
   text-align: center;
   padding: 10px 5px;
+  font-family: myfonts;
 }
 
 .pLocations {
@@ -144,6 +155,7 @@ main h2 {
   font-size: 1rem;
   font-weight: 400;
   width: 7rem;
+  font-family: myfonts;
 }
 .spot1,
 .off {
@@ -174,6 +186,7 @@ main h2 {
   font-size: 1.1rem;
   font-weight: 700;
   color: #353431;
+  font-family: myfonts;
 }
 .tabularRanking {
   display: flex;
@@ -211,6 +224,7 @@ main h2 {
   font-size: 1.05rem;
   font-weight: 400;
   color: #353431;
+  font-family: myfonts;
 }
 
 .hours {
@@ -219,6 +233,7 @@ main h2 {
   font-size: 0.9rem;
   font-weight: 400;
   color: #353431b2;
+  font-family: myfonts;
 }
 /* Styling for the menu and nav section */
 .menuIcons {
@@ -244,8 +259,7 @@ nav ul {
   margin-top: 15px;
   list-style-type: none;
 }
-nav ul li {
-}
+
 a {
   margin: 0;
 }
@@ -291,9 +305,11 @@ a img {
     font-size: 1.1rem;
     font-weight: 600;
     width: 7em;
+    font-family: myfonts;
   }
 }
 
+/* Medium Screens */
 @media (min-width: 800px) {
   .wrapContainer {
     min-width: 800px;
@@ -318,8 +334,17 @@ a img {
     gap: 2.5em;
   }
 
+  .spot1,
+  .spot2 {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 10rem;
+    font-family: myfonts;
+  }
+
   .tabularRanking {
-    box-shadow: 2px 5px 3px 5px #3534311a;
+    box-shadow: 2px 3px 3px 5px #3534311a;
   }
 
   #rank1 {
@@ -332,6 +357,7 @@ a img {
       align-items: flex-start;
       padding-left: 20px;
       margin-left: 1.8em;
+      font-family: myfonts;
     }
   }
 
@@ -347,7 +373,6 @@ a img {
     gap: 7em;
 
     p {
-      /* font-weight: 600; */
       text-align: center;
     }
   }
@@ -356,7 +381,6 @@ a img {
     margin: 0;
     text-align: center;
     font-weight: 700;
-    /* color: #353431; */
   }
   .menuIcons {
     margin: 0;
@@ -404,6 +428,7 @@ a img {
   }
 }
 
+/* Larger Screens */
 @media (min-width: 1200px) {
   .pLocations {
     display: grid;
